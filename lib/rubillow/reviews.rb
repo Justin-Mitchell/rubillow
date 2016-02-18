@@ -27,7 +27,7 @@ module Rubillow
         raise ArgumentError, "The screenname option is required"
       end
       
-      Models::SearchResult.new(Rubillow::Request.get("ProReviews", options))
+      Models::Reviews.new(Rubillow::Request.get("ProReviews", options))
     end
   end
 end
