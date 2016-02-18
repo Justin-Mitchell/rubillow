@@ -20,8 +20,7 @@ module Rubillow
       options = {
         :zws_id => Rubillow.configuration.zwsid,
         :screenname => nil,
-        :count => 10,
-        :output => 'JSON'
+        :count => 10
       }.merge!(options)
       
       if options[:screenname].blank?
