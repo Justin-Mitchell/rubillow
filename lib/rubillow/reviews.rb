@@ -21,7 +21,7 @@ module Rubillow
         :zws_id => Rubillow.configuration.zwsid,
         :screenname => nil,
         :count => 10,
-        :output => 'json'
+        :output => 'xml'
       }.merge!(options)
       
       if options[:screenname].nil?
