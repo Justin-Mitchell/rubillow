@@ -23,7 +23,7 @@ module Rubillow
         :count => 10
       }.merge!(options)
       
-      if options[:screenname].blank?
+      if options[:screenname].nil?
         raise ArgumentError, "The screenname option is required"
       end
       
