@@ -17,6 +17,7 @@ module Rubillow
       
       def data
         return if !success?
+        
         reviews = []
         response = @parser.xpath('//review')
         if response.each_with_index do |data, i|
@@ -40,7 +41,8 @@ module Rubillow
           
           data << review
         end
-        data
+        reviews
+        
       end
     end
   end
