@@ -20,7 +20,7 @@ module Rubillow
         
         reviews = []
         response = @parser.xpath('//review')
-        if response.each_with_index do |data, i|
+        response.each_with_index do |data, i|
           review = {
             index: i,
             created_at: data.xpath("//reviewDate")[i].text,
